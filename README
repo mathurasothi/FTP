@@ -1,0 +1,35 @@
+CS 456 - Computer Networks
+Assignment 1: Introductory Socket Programming
+
+Objective
+The objective of this client server program is to facilitate file transfer from the server to the client over the network using both UDP and TCP sockets.
+
+You must run the server program first as follows:
+./server.sh <req_code> <file_to_send>
+
+Then run the client program as follows:
+./client.sh <server address> <n_port> <mode> <req_code> <file_received>
+
+The expected types and description of parameters are listed below:
+<req_code>       - request code, a secret two-digit integer known to client and server
+<file_to_send>   - file name (string) of file that server sends to client for download
+<server address> - server's hostname as a string
+<n_port>         - fixed negotiation port of the server (integer)
+<mode>           - either 'A' for active or 'P' for passive
+<file_received>  - file name (string) that client will save downloaded file as
+
+Note that if <file_received> does not exist, the program creates a new file. On the other hand, <file_to_send> must already exist in the same location as the scripts. After running the server program, you may run the client program as many times as needed. To exit the server program simply issue a keyboard interrupt (CTRL + C)
+
+Example,
+./server.sh 13 'sent.txt'
+./client.sh 'ubuntu2004-002' 45789 'A' 13 'received.txt'
+
+Tested on the following machines:
+1. Same machine test
+    ubuntu2004-010
+2. Different machines test
+    ubuntu2004-010
+    ubuntu2004-002
+
+Python Version: 2.7
+
