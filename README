@@ -1,5 +1,4 @@
-CS 456 - Computer Networks
-Assignment 1: Introductory Socket Programming
+Socket Programming
 
 Objective
 The objective of this client server program is to facilitate file transfer from the server to the client over the network using both UDP and TCP sockets.
@@ -24,12 +23,6 @@ Example,
 ./server.sh 13 'sent.txt'
 ./client.sh 'ubuntu2004-002' 45789 'A' 13 'received.txt'
 
-Tested on the following machines:
-1. Same machine test
-    ubuntu2004-010
-2. Different machines test
-    ubuntu2004-010
-    ubuntu2004-002
 
 Python Version: 2.7
 
