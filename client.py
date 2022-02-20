@@ -4,7 +4,6 @@ import sys
 import os
 
 ''' 
-This is the client program for CS 456 Assignment 1.
 ./client.sh <server address> <n_port> <mode> <req_code> <file_received>
 '''
 
