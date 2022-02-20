@@ -3,7 +3,6 @@ import sys
 
 
 ''' 
-This is the server program for CS 456 Assignment 1.
 ./server.sh <req_code> <file_to_send>
 '''
 
